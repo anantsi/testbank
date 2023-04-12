@@ -1,0 +1,27 @@
+application:
+  appId: insecure-bank
+  assetId: insecure-bank
+  sdlcType: EDM
+  appType: Webapp
+  webservice: true
+  restApi: true
+  microservice: false
+  projectLanguage: Java
+  platformVersion: Java 8
+  buildSystem: Maven
+  riskMatrixRevision: Rev1.0
+  sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
+  sensitivePackagePattern: .*(\+\+\+.*(com\/example\/app)).*
+  fileChangeThreshold: 10
+  release: major
+environment:
+  scm: github
+  scmOwner: devsecops-test
+  scmRepositoryName: insecure-bank
+  scmBranchName: dev
+  githubApiUrl: https://api.github.com/repos/
+  jiraProjectName: <<JIRA_PROJECT_NAME>>
+  jiraIssuesQuery: <<JIRA_ISSUES_QUERY>>
+  jiraApiUrl: <<JIRA_API_URL>>
+  jiraUserName: <<JIRA_USERNAME>>
+  jiraAuthToken: <<JIRA_AUTH_TOKEN>>
