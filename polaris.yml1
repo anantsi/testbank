@@ -4,9 +4,9 @@ install:
     version: latest
 project:
   name: ""
-  branch: "origin/master"
+  branch: "origin/dev"
   revision:
-    name: "sig-devsecops/insecure-bank"
+    name: "bank-test"
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
