@@ -4,9 +4,9 @@ install:
     version: latest
 project:
   name: ""
-  branch: "origin/master"
+  branch: "origin/polaris"
   revision:
-    name: "bank-test"
+    name: "banktest"
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
