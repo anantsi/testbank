@@ -10,8 +10,9 @@ project:
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
+  analyze:
+  mode: central
+install:
   coverity:
-    buildless:
-      project:
-        languages:
-          - "java"
+    version: default
+serverUrl: "https://sig-cons-ms-sca.polaris.synopsys.com"
