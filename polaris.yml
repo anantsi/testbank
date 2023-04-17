@@ -10,9 +10,17 @@ project:
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
-  analyze:
+  fileSystem:
+    java:
+      files:
+      - directory: ${project.projectDir}
+      - excludeRegex: .*.war|.*.jar
+analyze:
   mode: central
+  coverity:
+    caching:
+      jars: "disable"
 install:
   coverity:
-    version: default
-serverUrl: "https://sig-cons-ms-sca.polaris.synopsys.com"
+    version: "2022.12.0"
+serverUrl: https://sig-cons-ms-sca.polaris.synopsys.com/
