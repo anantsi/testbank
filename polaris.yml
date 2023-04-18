@@ -3,15 +3,24 @@ install:
   coverity:
     version: latest
 project:
-  name: ""
-  branch: "origin/master"
+  name: "bank-test"
+  branch: "origin/dev"
   revision:
-    name: "sig-devsecops/insecure-bank"
+    name: "bank-test"
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
+  fileSystem:
+    java:
+      files:
+      - directory: ${project.projectDir}
+      - excludeRegex: .*.war|.*.jar
+analyze:
+  mode: central
   coverity:
-    buildless:
-      project:
-        languages:
-          - "java"
+    caching:
+      jars: "disable"
+install:
+  coverity:
+    version: "2022.12.0"
+serverUrl: https://sig-cons-ms-sca.polaris.synopsys.com/
