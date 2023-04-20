@@ -1,5 +1,8 @@
 # Insecure Bank
 
+[ERROR] TU 36: 
+Suppressible assertion failed at translationunit.cpp:1938: Primary SF /var/lib/jenkins/.m2/repository/org/springframework/spring-webmvc/4.2.3.RELEASE/spring-webmvc-4.2.3.RELEASE.jar of binary TU 36 doesn't appear in its emit invocation's referenced files
+
 ## Building
 
 ```
