@@ -3,7 +3,7 @@ install:
   coverity:
     version: latest
 project:
-  name: "bank-test"
+  name: "test/bank-test"
   branch: "origin/polaris"
   revision:
     name: "bank-test"
