@@ -3,8 +3,8 @@ install:
   coverity:
     version: latest
 project:
-  name: "bank test"
-  branch: "origin/polaris"
+  name: "test/bank-test"
+  branch: "origin/name"
   revision:
     name: "bank test"
     date: "2020-10-01T14:25:30Z"
