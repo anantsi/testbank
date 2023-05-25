@@ -3,10 +3,10 @@ install:
   coverity:
     version: latest
 project:
-  name: "bank-test"
-  branch: "origin/dev"
+  name: "insecure-bank"
+  branch: "main"
   revision:
-    name: "bank-test"
+    name: "insecure-bank"
     date: "2020-10-01T14:25:30Z"
   captureDir: .synopsys/polaris
 capture:
